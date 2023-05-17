@@ -9,8 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     
-    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
-    let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
+    @State var mainColor = GameColor.main
     
     
     let question = Question(questionText: "Qual linguagem de programação é usada principalmente para o desenvolvimento de aplicativos iOS?", possibleAnswers: ["Python", "Java", "Swift", "Kotlin"], correctAnswer: 2)

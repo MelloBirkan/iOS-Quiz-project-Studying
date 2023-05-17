@@ -15,6 +15,8 @@
 		1B22A3F12A0C96760012F262 /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22A3F02A0C96760012F262 /* ChoiceTextView.swift */; };
 		1B22A3F32A0ECD890012F262 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22A3F22A0ECD890012F262 /* Game.swift */; };
 		1B22A4132A1466C70012F262 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22A4122A1466C70012F262 /* WelcomeView.swift */; };
+		1B22A4152A1476200012F262 /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22A4142A1476200012F262 /* GameColor.swift */; };
+		1B22A4192A1478A90012F262 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22A4182A1478A90012F262 /* BottomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		1B22A3F02A0C96760012F262 /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		1B22A3F22A0ECD890012F262 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1B22A4122A1466C70012F262 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1B22A4142A1476200012F262 /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
+		1B22A4182A1478A90012F262 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			children = (
 				1B0DAE3A29F8A94C0032FDCB /* GameView.swift */,
 				1B22A4122A1466C70012F262 /* WelcomeView.swift */,
+				1B22A4182A1478A90012F262 /* BottomTextView.swift */,
+				1B22A4142A1476200012F262 /* GameColor.swift */,
 				1B22A3F02A0C96760012F262 /* ChoiceTextView.swift */,
 			);
 			path = Views;
@@ -169,6 +175,8 @@
 				1B22A4132A1466C70012F262 /* WelcomeView.swift in Sources */,
 				1B22A3F32A0ECD890012F262 /* Game.swift in Sources */,
 				1B0DAE3B29F8A94C0032FDCB /* GameView.swift in Sources */,
+				1B22A4192A1478A90012F262 /* BottomTextView.swift in Sources */,
+				1B22A4152A1476200012F262 /* GameColor.swift in Sources */,
 				1B22A3F12A0C96760012F262 /* ChoiceTextView.swift in Sources */,
 				1B0DAE3929F8A94C0032FDCB /* iOS_QuizApp.swift in Sources */,
 			);
