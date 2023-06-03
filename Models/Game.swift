@@ -5,7 +5,7 @@
 //  Created by Marcello Gonzatto Birkan on 12/05/23.
 //
 
-import Foundation
+import SwiftUI
 
 
 struct Game {

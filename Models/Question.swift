@@ -5,7 +5,7 @@
 //  Created by Marcello Gonzatto Birkan on 11/05/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct Question: Hashable {
     let questionText: String

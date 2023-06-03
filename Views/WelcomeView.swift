@@ -26,7 +26,7 @@ struct WelcomeView: View {
                     NavigationLink (
                         destination: GameView(),
                         label: {
-                                BottomTextView(str: "Okay, bora começar")
+                                BottomTextView(str: "Okay, bora começar!")
                     })
                 }
                 .foregroundColor(.white)
