@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @EnvironmentObject var viewModel: GameViewModel
     let question: Question
     
     var body: some View {
@@ -18,12 +19,17 @@ struct QuestionView: View {
                 .bold()
             Spacer()
             if question.possibleAnswers[0].count > 8{
-            VStack {
-                SharedContent(question: question)
+                VStack {
+                    SharedContent(question: question)
                 }
             } else {
                 HStack {
                     SharedContent(question: question)
+                }
+            }
+            if viewModel.guessWasMade {
+                Button(action: { viewModel.DisplayNextScreen() }) {
+                    BottomTextView(str: "Proximo")
                 }
             }
         }
@@ -31,22 +37,27 @@ struct QuestionView: View {
 }
 
 struct SharedContent: View {
+    @EnvironmentObject var viewModel: GameViewModel
     let question: Question
     
     var body: some View {
         // Conteúdo compartilhado entre VStack e HStack
         ForEach(0..<question.possibleAnswers.count) { answerIndex in
-            Button(action: {print("Escolheu a opção \(answerIndex)")
-                
-            }, label: {
+            Button(action: {
+                print("Escolheu a opção \(question.possibleAnswers[answerIndex])")
+                viewModel.makeGuess(atIndex: answerIndex)
+            }) {
                 ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
-            })
-        }
-    }
-    
-    struct QuestionView_Previews: PreviewProvider {
-        static var previews: some View {
-            QuestionView(question: Game().currentQuestion)
+            }
         }
     }
 }
+
+
+struct QuestionView_Previews: PreviewProvider {
+    static var previews: some View {
+        QuestionView(question: Game().currentQuestion)
+            .environmentObject(GameViewModel())
+    }
+}
+
