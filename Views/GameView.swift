@@ -23,14 +23,19 @@ struct GameView: View {
                 QuestionView(question: viewModel.currentQuestion)
             }
         }
-        .foregroundColor(.white)
-        .navigationBarHidden(true)
-        .environmentObject(viewModel)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
-    }
-}
+        .background(
+            NavigationLink(destination: ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses,incorrectGuesses: viewModel.incorrectguesses)),
+                           isActive:.constant(viewModel.gameIsOver),
+                           label: {EmptyView()})
+                          )
+            .foregroundColor(.white)
+            .navigationBarHidden(true)
+            .environmentObject(viewModel)
+            }
+            }
+            
+            struct ContentView_Previews: PreviewProvider {
+                static var previews: some View {
+                    GameView()
+                }
+            }

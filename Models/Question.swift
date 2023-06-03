@@ -35,9 +35,9 @@ struct Question: Hashable {
                             "iOS",
                             "macOS",
                             "watchOS e tvOS",
-                            "Todos"
+                            "Todas"
                          ],
-                         correctAnswer: 2),
+                         correctAnswer: 3),
 
         Question(questionText: "Como você pode criar uma visualização de texto em SwiftUI?",
                          possibleAnswers: [
