@@ -32,10 +32,10 @@ struct Question: Hashable {
 
         Question(questionText: "Quais plataformas da Apple suportam SwiftUI?",
                          possibleAnswers: [
-                            "Apenas iOS",
-                            "Apenas macOS",
-                            "iOS, macOS, watchOS e tvOS",
-                            "Apenas watchOS e tvOS"
+                            "iOS",
+                            "macOS",
+                            "watchOS e tvOS",
+                            "Todos"
                          ],
                          correctAnswer: 2),
 
