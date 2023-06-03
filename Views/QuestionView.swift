@@ -48,7 +48,9 @@ struct SharedContent: View {
                 viewModel.makeGuess(atIndex: answerIndex)
             }) {
                 ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
+                    .background(viewModel.color(forOptionIndex: answerIndex))
             }
+            .disabled(viewModel.guessWasMade)
         }
     }
 }
